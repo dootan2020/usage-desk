@@ -17,6 +17,8 @@ currently unsigned. Automated host install/upgrade/removal and local runtime
 tests passed. Clean Windows guest execution, persistent Windows restart and
 publisher signing are still pending. Do not disable Windows security to install.
 SHA-256 identifies the file; it does not verify publisher identity.
+The full development repository's source hygiene/README gate is not green,
+separately from the passing focused widget and installer tests.
 
 Windows 10/11 x64 is the intended target. The verified developer host is Windows
 11 x64 build 26200; other builds still require acceptance testing. Internet is
