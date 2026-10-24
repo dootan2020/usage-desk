@@ -8,8 +8,8 @@ Agents can read the same local cache through MCP.
 
 ## Download
 
-[Download v1.0.1-rc.1 for Windows x64](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.1/UsageDeskSetup-1.0.1-rc.1-x64.exe)
-· [SHA-256 checksums](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.1/SHA256SUMS.txt)
+[Download v1.0.1-rc.2 for Windows x64](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.2/UsageDeskSetup-1.0.1-rc.2-x64.exe)
+· [SHA-256 checksums](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.2/SHA256SUMS.txt)
 · [All releases](https://github.com/dootan2020/usage-desk/releases)
 
 **Release candidate — not a stable production release.** The installer is
@@ -28,7 +28,7 @@ when that runtime is missing. Python is included. No source checkout is needed.
 ## Install and sign in
 
 1. Download the installer and matching checksum from the release above. Verify
-   with `Get-FileHash -Algorithm SHA256 .\UsageDeskSetup-1.0.1-rc.1-x64.exe`.
+   with `Get-FileHash -Algorithm SHA256 .\UsageDeskSetup-1.0.1-rc.2-x64.exe`.
 2. Run setup and choose **Install / update**. It installs for your Windows user
    under `%LOCALAPPDATA%\FirstmateUsage`, adds Start menu/startup shortcuts and an
    Installed apps entry. A missing WebView2 runtime is obtained from Microsoft
@@ -56,7 +56,9 @@ Official clients: [Codex](https://learn.chatgpt.com/docs/cli),
 The widget does not sell model access or replace a provider subscription. It
 does not submit model prompts. These adapters depend on current native client
 metadata; upstream changes can break collection. Native model options, especially
-Claude aliases, do not certify account entitlement or a separate quota per model.
+Claude selectors, do not certify account entitlement or a separate quota per model.
+Claude details include resolved versions, descriptions and reported capability
+support, including extended-context choices such as Fable's `[1m]` selector.
 This is an independent utility, not an official provider product.
 
 ## Everyday use
