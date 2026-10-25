@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "project": "Usage desk landing",
+  "entry": "new",
+  "project_type": "content",
+  "purpose": {
+    "choice": "Usage desk product landing page with real Windows release download, setup instructions and product features.",
+    "approval": {
+      "by": "captain",
+      "date": "2026-10-25",
+      "words": "rồi làm cho anh cái landing page như mẫu này https://piaz-switch.vercel.app/"
+    }
+  },
+  "design_language": {
+    "choice": "Owner-selected Piaz Switch reference: bright surfaces, rounded pill navigation, split typography-led hero and blue product showcase; original Usage desk branding and copy.",
+    "approval": {
+      "by": "captain",
+      "date": "2026-10-25",
+      "words": "rồi làm cho anh cái landing page như mẫu này https://piaz-switch.vercel.app/"
+    }
+  },
+  "scorecard_approval": {
+    "by": "captain",
+    "date": "2026-10-25",
+    "words": "Duyệt scorecard và ngoại lệ lần public đầu trong phạm vi trên"
+  },
+  "criteria": {
+    "1": {
+      "criterion": "UI/UX",
+      "judge": "captain",
+      "evidence": {
+        "reference": "https://github.com/dootan2020/usage-desk/blob/main/docs/landing-acceptance.md",
+        "date": "2026-10-25",
+        "method": "Static/secret validation, public release metadata check, GitHub Actions and CUA rendered/interaction checks.",
+        "scope": "Usage desk static landing; 375px, 768px and 1440px; first public launch.",
+        "result": "Local UI and CI checks passed; explicit first-launch waivers cover unmeasured/device/operations requirements. No fabricated field metrics."
+      },
+      "measurements": {},
+      "checks": {
+        "rendered_375px_approved": null,
+        "rendered_1440px_approved": null,
+        "checklist_nothing_missing_that_matters": null,
+        "empty_error_states_reviewed": null,
+        "ios_safari_reviewed": null,
+        "android_reviewed": null,
+        "polish_reviewed": null
+      },
+      "waiver": {
+        "by": "captain",
+        "date": "2026-10-25",
+        "words": "Question shown: \"Anh có duyệt scorecard cho lần public đầu và cho phép ngoại lệ toàn tiêu chí 1, 2, 3, 4, 8, 9, 10 đối với phần chưa có bằng chứng: thiết bị iOS/Android và screen reader thật, field INP, kiểm tra chia sẻ Facebook/Zalo, rollback/live monitoring/traffic/vitals và các mục dịch nội dung không áp dụng? Gate chỉ hỗ trợ ngoại lệ cả tiêu chí; em vẫn chạy và ghi lại các test khả thi, không ghi điểm hay kết quả giả. Các tiêu chí 5, 6, 7 về dữ liệu và bảo mật vẫn phải qua.\" Owner answer: \"Duyệt scorecard và ngoại lệ lần public đầu trong phạm vi trên\""
+      },
+      "approval": {
+        "by": "captain",
+        "date": "2026-10-25",
+        "words": "Landing đẹp rồi em, nhưng bộ icon, chưa đẹp, đổi cho anh bộ đẹp và phù hợp hơn anh duyệt bố cục này nhé. Em hoàn tất các kiểm tra còn lại, merge PR #1 và đưa landing page lên public cho anh."
+      }
+    },
+    "2": {
+      "criterion": "Performance",
+      "judge": "CI + field measurement",
+      "evidence": {
+        "reference": "https://github.com/dootan2020/usage-desk/blob/main/docs/landing-acceptance.md",
+        "date": "2026-10-25",
+        "method": "Static/secret validation, public release metadata check, GitHub Actions and CUA rendered/interaction checks.",
+        "scope": "Usage desk static landing; 375px, 768px and 1440px; first public launch.",
+        "result": "Local UI and CI checks passed; explicit first-launch waivers cover unmeasured/device/operations requirements. No fabricated field metrics."
+      },
+      "measurements": {
+        "lighthouse_mobile_runs": null,
+        "lcp_seconds": null,
+        "inp_ms": null,
+        "cls": null,
+        "js_gzip_kb": 1.015,
+        "first_load_mb": 0.050196
+      },
+      "checks": {
+        "inp_from_field": null
+      },
+      "waiver": {
+        "by": "captain",
+        "date": "2026-10-25",
+        "words": "Question shown: \"Anh có duyệt scorecard cho lần public đầu và cho phép ngoại lệ toàn tiêu chí 1, 2, 3, 4, 8, 9, 10 đối với phần chưa có bằng chứng: thiết bị iOS/Android và screen reader thật, field INP, kiểm tra chia sẻ Facebook/Zalo, rollback/live monitoring/traffic/vitals và các mục dịch nội dung không áp dụng? Gate chỉ hỗ trợ ngoại lệ cả tiêu chí; em vẫn chạy và ghi lại các test khả thi, không ghi điểm hay kết quả giả. Các tiêu chí 5, 6, 7 về dữ liệu và bảo mật vẫn phải qua.\" Owner answer: \"Duyệt scorecard và ngoại lệ lần public đầu trong phạm vi trên\""
+      }
+    },
+    "3": {
+      "criterion": "Accessibility",
+      "judge": "CI + manual",
+      "evidence": {
+        "reference": "https://github.com/dootan2020/usage-desk/blob/main/docs/landing-acceptance.md",
+        "date": "2026-10-25",
+        "method": "Static/secret validation, public release metadata check, GitHub Actions and CUA rendered/interaction checks.",
+        "scope": "Usage desk static landing; 375px, 768px and 1440px; first public launch.",
+        "result": "Local UI and CI checks passed; explicit first-launch waivers cover unmeasured/device/operations requirements. No fabricated field metrics."
+      },
+      "measurements": {
+        "lighthouse_accessibility": null
+      },
+      "checks": {
+        "keyboard_usable": true,
+        "screen_reader_correct": null,
+        "wcag_aa_contrast": null
+      },
+      "waiver": {
+        "by": "captain",
+        "date": "2026-10-25",
+        "words": "Question shown: \"Anh có duyệt scorecard cho lần public đầu và cho phép ngoại lệ toàn tiêu chí 1, 2, 3, 4, 8, 9, 10 đối với phần chưa có bằng chứng: thiết bị iOS/Android và screen reader thật, field INP, kiểm tra chia sẻ Facebook/Zalo, rollback/live monitoring/traffic/vitals và các mục dịch nội dung không áp dụng? Gate chỉ hỗ trợ ngoại lệ cả tiêu chí; em vẫn chạy và ghi lại các test khả thi, không ghi điểm hay kết quả giả. Các tiêu chí 5, 6, 7 về dữ liệu và bảo mật vẫn phải qua.\" Owner answer: \"Duyệt scorecard và ngoại lệ lần public đầu trong phạm vi trên\""
+      }
+    },
+    "4": {
+      "criterion": "SEO and sharing",
+      "judge": "CI + manual",
+      "evidence": {
+        "reference": "https://github.com/dootan2020/usage-desk/blob/main/docs/landing-acceptance.md",
+        "date": "2026-10-25",
+        "method": "Static/secret validation, public release metadata check, GitHub Actions and CUA rendered/interaction checks.",
+        "scope": "Usage desk static landing; 375px, 768px and 1440px; first public launch.",
+        "result": "Local UI and CI checks passed; explicit first-launch waivers cover unmeasured/device/operations requirements. No fabricated field metrics."
+      },
+      "measurements": {
+        "lighthouse_seo": null
+      },
+      "checks": {
+        "sitemap": null,
+        "appropriate_structured_data": null,
+        "facebook_share_image": null,
+        "zalo_share_image": null
+      },
+      "waiver": {
+        "by": "captain",
+        "date": "2026-10-25",
+        "words": "Question shown: \"Anh có duyệt scorecard cho lần public đầu và cho phép ngoại lệ toàn tiêu chí 1, 2, 3, 4, 8, 9, 10 đối với phần chưa có bằng chứng: thiết bị iOS/Android và screen reader thật, field INP, kiểm tra chia sẻ Facebook/Zalo, rollback/live monitoring/traffic/vitals và các mục dịch nội dung không áp dụng? Gate chỉ hỗ trợ ngoại lệ cả tiêu chí; em vẫn chạy và ghi lại các test khả thi, không ghi điểm hay kết quả giả. Các tiêu chí 5, 6, 7 về dữ liệu và bảo mật vẫn phải qua.\" Owner answer: \"Duyệt scorecard và ngoại lệ lần public đầu trong phạm vi trên\""
+      }
+    },
+    "5": {
+      "criterion": "Data trust",
+      "judge": "CI + script",
+      "evidence": {
+        "reference": "https://github.com/dootan2020/usage-desk/blob/main/docs/landing-acceptance.md",
+        "date": "2026-10-25",
+        "method": "Static/secret validation, public release metadata check, GitHub Actions and CUA rendered/interaction checks.",
+        "scope": "Usage desk static landing; 375px, 768px and 1440px; first public launch.",
+        "result": "Local UI and CI checks passed; explicit first-launch waivers cover unmeasured/device/operations requirements. No fabricated field metrics."
+      },
+      "measurements": {},
+      "checks": {
+        "reliable_update_schedule": true,
+        "broken_source_isolated": true,
+        "updated_at_visible": true,
+        "build_failure_alert": true,
+        "no_invented_numbers": true
+      },
+      "waiver": null
+    },
+    "6": {
+      "criterion": "Content quality",
+      "judge": "script + sample read",
+      "evidence": {
+        "reference": "https://github.com/dootan2020/usage-desk/blob/main/docs/landing-acceptance.md",
+        "date": "2026-10-25",
+        "method": "Static/secret validation, public release metadata check, GitHub Actions and CUA rendered/interaction checks.",
+        "scope": "Usage desk static landing; 375px, 768px and 1440px; first public launch.",
+        "result": "Local UI and CI checks passed; explicit first-launch waivers cover unmeasured/device/operations requirements. No fabricated field metrics."
+      },
+      "measurements": {},
+      "checks": {
+        "no_duplicates": true,
+        "on_topic": true,
+        "origin_cited": true,
+        "proper_names_preserved": true
+      },
+      "waiver": null
+    },
+    "7": {
+      "criterion": "Security",
+      "judge": "CI",
+      "evidence": {
+        "reference": "https://github.com/dootan2020/usage-desk/blob/main/docs/landing-acceptance.md",
+        "date": "2026-10-25",
+        "method": "Static/secret validation, public release metadata check, GitHub Actions and CUA rendered/interaction checks.",
+        "scope": "Usage desk static landing; 375px, 768px and 1440px; first public launch.",
+        "result": "Local UI and CI checks passed; explicit first-launch waivers cover unmeasured/device/operations requirements. No fabricated field metrics."
+      },
+      "measurements": {},
+      "checks": {
+        "csp": true,
+        "source_sanitized": true,
+        "safe_external_links": true,
+        "no_keys_in_code": true
+      },
+      "waiver": null
+    },
+    "8": {
+      "criterion": "Operations",
+      "judge": "rehearsal",
+      "evidence": {
+        "reference": "https://github.com/dootan2020/usage-desk/blob/main/docs/landing-acceptance.md",
+        "date": "2026-10-25",
+        "method": "Static/secret validation, public release metadata check, GitHub Actions and CUA rendered/interaction checks.",
+        "scope": "Usage desk static landing; 375px, 768px and 1440px; first public launch.",
+        "result": "Local UI and CI checks passed; explicit first-launch waivers cover unmeasured/device/operations requirements. No fabricated field metrics."
+      },
+      "measurements": {
+        "rollback_minutes": null
+      },
+      "checks": {
+        "full_ci_gates": null,
+        "rollback_rehearsed": null,
+        "rollback_meets_agreed_budget": null,
+        "handover_docs": null
+      },
+      "waiver": {
+        "by": "captain",
+        "date": "2026-10-25",
+        "words": "Question shown: \"Anh có duyệt scorecard cho lần public đầu và cho phép ngoại lệ toàn tiêu chí 1, 2, 3, 4, 8, 9, 10 đối với phần chưa có bằng chứng: thiết bị iOS/Android và screen reader thật, field INP, kiểm tra chia sẻ Facebook/Zalo, rollback/live monitoring/traffic/vitals và các mục dịch nội dung không áp dụng? Gate chỉ hỗ trợ ngoại lệ cả tiêu chí; em vẫn chạy và ghi lại các test khả thi, không ghi điểm hay kết quả giả. Các tiêu chí 5, 6, 7 về dữ liệu và bảo mật vẫn phải qua.\" Owner answer: \"Duyệt scorecard và ngoại lệ lần public đầu trong phạm vi trên\""
+      }
+    },
+    "9": {
+      "criterion": "Observability",
+      "judge": "captain",
+      "evidence": {
+        "reference": "https://github.com/dootan2020/usage-desk/blob/main/docs/landing-acceptance.md",
+        "date": "2026-10-25",
+        "method": "Static/secret validation, public release metadata check, GitHub Actions and CUA rendered/interaction checks.",
+        "scope": "Usage desk static landing; 375px, 768px and 1440px; first public launch.",
+        "result": "Local UI and CI checks passed; explicit first-launch waivers cover unmeasured/device/operations requirements. No fabricated field metrics."
+      },
+      "measurements": {
+        "health_alert_latency_minutes": null
+      },
+      "checks": {
+        "health_check_scheduled": null,
+        "live_page_returns_200": null,
+        "live_data_readable": null,
+        "live_data_fresh": null,
+        "main_assets_load_fully": null,
+        "health_alert_rehearsed_real_failure": null,
+        "health_alert_received": null,
+        "health_alert_auto_clears": null,
+        "cookie_free_traffic": null,
+        "traffic_data_received": null,
+        "field_core_web_vitals_collected": null,
+        "field_core_web_vitals_received": null,
+        "captain_cloudflare_deployment": null
+      },
+      "waiver": {
+        "by": "captain",
+        "date": "2026-10-25",
+        "words": "Question shown: \"Anh có duyệt scorecard cho lần public đầu và cho phép ngoại lệ toàn tiêu chí 1, 2, 3, 4, 8, 9, 10 đối với phần chưa có bằng chứng: thiết bị iOS/Android và screen reader thật, field INP, kiểm tra chia sẻ Facebook/Zalo, rollback/live monitoring/traffic/vitals và các mục dịch nội dung không áp dụng? Gate chỉ hỗ trợ ngoại lệ cả tiêu chí; em vẫn chạy và ghi lại các test khả thi, không ghi điểm hay kết quả giả. Các tiêu chí 5, 6, 7 về dữ liệu và bảo mật vẫn phải qua.\" Owner answer: \"Duyệt scorecard và ngoại lệ lần public đầu trong phạm vi trên\""
+      },
+      "approval": null
+    },
+    "10": {
+      "criterion": "Legal",
+      "judge": "review",
+      "evidence": {
+        "reference": "https://github.com/dootan2020/usage-desk/blob/main/docs/landing-acceptance.md",
+        "date": "2026-10-25",
+        "method": "Static/secret validation, public release metadata check, GitHub Actions and CUA rendered/interaction checks.",
+        "scope": "Usage desk static landing; 375px, 768px and 1440px; first public launch.",
+        "result": "Local UI and CI checks passed; explicit first-launch waivers cover unmeasured/device/operations requirements. No fabricated field metrics."
+      },
+      "measurements": {},
+      "checks": {
+        "source_attribution": null,
+        "short_quotes_within_limits": null,
+        "translation_terms_cited": null,
+        "subscription_automation_terms_checked": null,
+        "translation_free_while_no_revenue": null
+      },
+      "waiver": {
+        "by": "captain",
+        "date": "2026-10-25",
+        "words": "Question shown: \"Anh có duyệt scorecard cho lần public đầu và cho phép ngoại lệ toàn tiêu chí 1, 2, 3, 4, 8, 9, 10 đối với phần chưa có bằng chứng: thiết bị iOS/Android và screen reader thật, field INP, kiểm tra chia sẻ Facebook/Zalo, rollback/live monitoring/traffic/vitals và các mục dịch nội dung không áp dụng? Gate chỉ hỗ trợ ngoại lệ cả tiêu chí; em vẫn chạy và ghi lại các test khả thi, không ghi điểm hay kết quả giả. Các tiêu chí 5, 6, 7 về dữ liệu và bảo mật vẫn phải qua.\" Owner answer: \"Duyệt scorecard và ngoại lệ lần public đầu trong phạm vi trên\""
+      }
+    }
+  }
+}

@@ -106,4 +106,5 @@ instructions. The development repository and owner data remain private.
 - [Clean Windows acceptance](docs/clean-windows.md)
 - [Owner Sandbox and signing steps](docs/owner-release-steps.md)
 - [Publisher signing](docs/signing.md)
-- [Landing page source](landing/) — design preview; public website launch awaits review.
+- [Landing page source](landing/) — the public website link is listed in this repository's About section.
+- [Website launch checks and first-launch exceptions](docs/landing-acceptance.md)
