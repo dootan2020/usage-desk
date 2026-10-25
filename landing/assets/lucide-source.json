@@ -1,0 +1,15 @@
+{
+  "library": "Lucide",
+  "repository": "https://github.com/lucide-icons/lucide",
+  "commit": "7faf87628a1ad6175975bc595344337ce14a7db4",
+  "icons": [
+    "refresh-cw",
+    "clock-3",
+    "square-terminal",
+    "plug",
+    "shield-check",
+    "chart-no-axes-column"
+  ],
+  "license": "lucide-license.txt",
+  "modification": "Decorative stroke width set to 1.7; accessibility and source attributes added."
+}

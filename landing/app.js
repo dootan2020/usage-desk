@@ -11,3 +11,12 @@ function advance(){active=(active+1)%providers.length;document.getElementById('g
 function pause(){clearInterval(timer);timer=null;}
 function resume(){pause();if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!document.hidden&&!glance.matches(':hover,:focus'))timer=setInterval(advance,5000);}
 glance.addEventListener('click',advance);glance.addEventListener('mouseenter',pause);glance.addEventListener('mouseleave',resume);glance.addEventListener('focus',pause);glance.addEventListener('blur',resume);document.addEventListener('visibilitychange',()=>document.hidden?pause():resume());resume();
+
+// Give every current its own pace and phase; no animation-frame JavaScript loop.
+for(const [index,motion] of [...document.querySelectorAll('.wave-particle animateMotion')].entries()){
+  const seconds=10+index*5+Math.random()*4;
+  motion.setAttribute('dur',seconds.toFixed(2)+'s');
+  motion.setAttribute('begin',(-Math.random()*seconds).toFixed(2)+'s');
+}
+for(const icon of document.querySelectorAll('.ambient-icon'))icon.style.animationDuration=(7+Math.random()*3).toFixed(2)+'s';
+for(const wave of document.querySelectorAll('.wave-line'))wave.style.animationDuration=(16+Math.random()*12).toFixed(2)+'s';
