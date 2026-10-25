@@ -14,11 +14,11 @@
 .ambient-waves path:nth-child(2){opacity:.2;animation-duration:19s;animation-delay:-7s}
 .ambient-waves path:nth-child(3){opacity:.15;animation-duration:23s;animation-delay:-12s}
 .ambient-icon{position:absolute;display:grid;place-items:center;width:36px;height:36px;border:1px solid #ffffff70;border-radius:12px;background:#ffffff18;color:#f5fbff;box-shadow:0 6px 18px #164c9c0b;animation:ambient-float 8s ease-in-out infinite alternate}
-.ambient-icon svg{width:19px;height:19px}.ambient-icon-1{left:3%;top:29%}.ambient-icon-2{left:6%;top:58%;animation-delay:-3s}.ambient-icon-3{left:15%;bottom:10%;animation-delay:-6s}.ambient-icon-4{right:3%;top:34%;animation-delay:-4s}.ambient-icon-5{right:6%;top:65%;animation-delay:-2s}.ambient-icon-6{right:16%;bottom:9%;animation-delay:-5s}
+.ambient-icon svg{width:19px;height:19px}.ambient-icon-1{left:calc(45px - 18px);top:27%}.ambient-icon-2{left:calc(45px - 18px);top:48%;animation-delay:-3s}.ambient-icon-3{left:calc(45px - 18px);top:69%;animation-delay:-6s}.ambient-icon-4{right:calc(45px - 18px);top:27%;animation-delay:-4s}.ambient-icon-5{right:calc(45px - 18px);top:48%;animation-delay:-2s}.ambient-icon-6{right:calc(45px - 18px);top:69%;animation-delay:-5s}
 .illustration-caption{color:#425d7e}.app-window{box-shadow:0 22px 55px #193e7225,0 0 0 6px #ffffff30}
 @keyframes ambient-float{from{transform:translateY(-5px) rotate(-4deg)}to{transform:translateY(7px) rotate(4deg)}}
 @keyframes ambient-wave{from{transform:translate(-14px,-9px) scaleY(.96)}to{transform:translate(14px,12px) scaleY(1.04)}}
 @keyframes ambient-glow{from{transform:translate(-2%,-2%) scale(.98);opacity:.65}to{transform:translate(2%,3%) scale(1.05);opacity:1}}
-@media(max-width:1000px){.showcase{width:calc(100% - 48px);padding-inline:50px}.ambient-icon{width:30px;height:30px;border-radius:10px}.ambient-icon svg{width:16px;height:16px}.ambient-icon-1,.ambient-icon-2{left:1%}.ambient-icon-4,.ambient-icon-5{right:1%}}
+@media(max-width:1000px){.showcase{width:calc(100% - 48px);padding-inline:50px}.ambient-icon{width:30px;height:30px;border-radius:10px}.ambient-icon svg{width:16px;height:16px}.ambient-icon-1,.ambient-icon-2,.ambient-icon-3{left:10px}.ambient-icon-4,.ambient-icon-5,.ambient-icon-6{right:10px}}
 @media(max-width:720px){.showcase{width:calc(100% - 24px);padding:26px 14px 20px;border-radius:25px}.ambient-icon{display:none}.ambient-waves{opacity:.5}.showcase-atmosphere::before{animation:none}}
 @media(prefers-reduced-motion:reduce){.showcase-atmosphere::before,.ambient-waves path,.ambient-icon{animation:none}}
