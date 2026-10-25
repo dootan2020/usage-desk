@@ -1,0 +1,21 @@
+name: Landing checks
+on:
+  pull_request:
+  push:
+    branches: [main, codex/rc17-release-and-landing]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Validate JavaScript
+        run: node --check landing/app.js
+      - name: Check static assets, deliberate failure case and public release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 tools/check-landing.py --self-test --online
+      - name: Surface a failed release check
+        if: failure()
+        run: echo '::error title=Landing release check failed::Inspect missing assets, release metadata and privacy checks before publishing.'
