@@ -1,0 +1,9 @@
+{
+  "version": "1.0.1-rc.17",
+  "installer": "UsageDeskSetup-1.0.1-rc.17-x64.exe",
+  "size_bytes": 11850752,
+  "sha256": "a761671f83ec4af4a424aba152df525430c65d8548d74fd39191ceabf21424dd",
+  "status": "unsigned-prerelease",
+  "clean_windows_acceptance": "pending",
+  "publisher_signing": "pending"
+}

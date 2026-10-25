@@ -8,8 +8,8 @@ Agents can read the same local cache through MCP.
 
 ## Download
 
-[Download v1.0.1-rc.2 for Windows x64](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.2/UsageDeskSetup-1.0.1-rc.2-x64.exe)
-· [SHA-256 checksums](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.2/SHA256SUMS.txt)
+[Download v1.0.1-rc.17 for Windows x64](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.17/UsageDeskSetup-1.0.1-rc.17-x64.exe)
+· [SHA-256 checksums](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.17/SHA256SUMS.txt)
 · [All releases](https://github.com/dootan2020/usage-desk/releases)
 
 **Release candidate — not a stable production release.** The installer is
@@ -17,8 +17,6 @@ currently unsigned. Automated host install/upgrade/removal and local runtime
 tests passed. Clean Windows guest execution, persistent Windows restart and
 publisher signing are still pending. Do not disable Windows security to install.
 SHA-256 identifies the file; it does not verify publisher identity.
-The full development repository's source hygiene/README gate is not green,
-separately from the passing focused widget and installer tests.
 
 Windows 10/11 x64 is the intended target. The verified developer host is Windows
 11 x64 build 26200; other builds still require acceptance testing. Internet is
@@ -28,7 +26,7 @@ when that runtime is missing. Python is included. No source checkout is needed.
 ## Install and sign in
 
 1. Download the installer and matching checksum from the release above. Verify
-   with `Get-FileHash -Algorithm SHA256 .\UsageDeskSetup-1.0.1-rc.2-x64.exe`.
+   with `Get-FileHash -Algorithm SHA256 .\UsageDeskSetup-1.0.1-rc.17-x64.exe`.
 2. Run setup and choose **Install / update**. It installs for your Windows user
    under `%LOCALAPPDATA%\FirstmateUsage`, adds Start menu/startup shortcuts and an
    Installed apps entry. A missing WebView2 runtime is obtained from Microsoft
@@ -41,7 +39,7 @@ when that runtime is missing. Python is included. No source checkout is needed.
    password, API key or login code into this widget, MCP or a GitHub issue.
 5. Choose **Check connections**. Client installed, bridge installed and fresh usage
    are checked independently. A successful bridge setup alone is not live usage.
-6. Choose **Continue to widget**. Connections can be reopened from Overview.
+6. Choose **Continue to widget**. Connections can be reopened from the main view.
 
 | Provider | Official login | Data source |
 | --- | --- | --- |
@@ -65,13 +63,17 @@ This is an independent utility, not an official provider product.
 
 - Taskbar carousel rotates every five seconds and pauses on hover. Select
   **Show all 3 providers** to show the three values together.
-- Overview, Timeline and Billing share provider cards and paging. Models and
-  history expand on demand. Reset timestamps use the selected display timezone.
+- One main view shows shared provider cards. Upcoming resets, recorded history
+  and model details expand on demand. Accounts and quota pages remain reachable
+  without page scrolling. The default timezone is Hanoi · UTC+07.
+- Pinned keeps the panel open on outside clicks; unpinned dismisses it. Hide and
+  taskbar usage still close it. The pin choice persists across app/startup restarts.
 - **Last known** preserves older real data after a failed read. Open Connections
   to reconnect expired official login. Rate limits keep their cooldown. Updates
   to a model catalog never refresh the age of older quota or credit.
-- Prices and subscription renewals are user-entered. Reported credits are not
-  invoices, and Codex provider credits are not currency.
+- Subscription renewal dates and invoices are not retrieved. Reported credit
+  retains its provider units; Codex credit remaining uses the first recorded
+  balance as a persistent local 100% reference, not a provider-reported total.
 - Agents use the automatically registered `firstmate-usage` MCP server. Reconnect
   the agent's MCP session after setup. Reads use the shared cache and do not
   start another collector or provider login.
@@ -96,3 +98,12 @@ release version, Windows build and a redacted description instead.
 
 This repository distributes only setup artifacts, checksums and public
 instructions. The development repository and owner data remain private.
+
+## Guides and landing page
+
+- [Install and connect](docs/getting-started.md)
+- [RC17 changes and validation](docs/release-rc17.md)
+- [Clean Windows acceptance](docs/clean-windows.md)
+- [Owner Sandbox and signing steps](docs/owner-release-steps.md)
+- [Publisher signing](docs/signing.md)
+- [Landing page source](landing/) — design preview; public website launch awaits review.
