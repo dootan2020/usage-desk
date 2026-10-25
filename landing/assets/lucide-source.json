@@ -3,13 +3,25 @@
   "repository": "https://github.com/lucide-icons/lucide",
   "commit": "7faf87628a1ad6175975bc595344337ce14a7db4",
   "icons": [
-    "refresh-cw",
+    "chart-no-axes-column",
+    "chevron-right",
     "clock-3",
-    "square-terminal",
+    "credit-card",
+    "database",
+    "download",
+    "external-link",
+    "laptop",
+    "layers",
+    "layout-grid",
+    "menu",
+    "monitor",
+    "panels-top-left",
+    "pin",
     "plug",
+    "refresh-cw",
     "shield-check",
-    "chart-no-axes-column"
+    "square-terminal"
   ],
   "license": "lucide-license.txt",
-  "modification": "Decorative stroke width set to 1.7; accessibility and source attributes added."
+  "modification": "Stroke width set to 1.7; accessibility, CSS and source attributes added."
 }
