@@ -1,8 +1,9 @@
 {
-  "version": "1.0.1-rc.17",
-  "installer": "UsageDeskSetup-1.0.1-rc.17-x64.exe",
-  "size_bytes": 11850752,
-  "sha256": "a761671f83ec4af4a424aba152df525430c65d8548d74fd39191ceabf21424dd",
+  "version": "1.0.1-rc.18",
+  "installer": "UsageDeskSetup-1.0.1-rc.18-x64.exe",
+  "size_bytes": 11851264,
+  "sha256": "36ad1bc72f77e1b57e09bf1e3c23a9418fb241e9a4887135b920f898802ed37a",
+  "release_date": "2026-10-30",
   "status": "unsigned-prerelease",
   "clean_windows_acceptance": "pending",
   "publisher_signing": "pending"
