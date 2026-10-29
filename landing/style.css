@@ -22,3 +22,19 @@
 @media(max-width:1000px){.showcase{width:calc(100% - 48px);padding-inline:50px}.ambient-icon{width:30px;height:30px;border-radius:10px}.ambient-icon svg{width:16px;height:16px}.ambient-icon-1,.ambient-icon-2,.ambient-icon-3{left:10px}.ambient-icon-4,.ambient-icon-5,.ambient-icon-6{right:10px}}
 @media(max-width:720px){.showcase{width:calc(100% - 24px);padding:26px 14px 20px;border-radius:25px}.ambient-icon{display:none}.ambient-waves{opacity:.5}.showcase-atmosphere::before{animation:none}}
 @media(prefers-reduced-motion:reduce){.showcase-atmosphere::before,.ambient-waves .wave-line,.ambient-icon{animation:none}.wave-particle{display:none}}
+
+.agent-section{margin-top:95px;margin-bottom:65px;padding:55px 42px;background:#fff;border:1px solid #e3e9f1;border-radius:28px;box-shadow:0 15px 50px #18335705}
+.agent-section h2{font-size:clamp(36px,4vw,52px)}
+.agent-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;padding-left:22px;margin:30px 0 28px}
+.agent-steps li{padding-left:3px;color:#3469b8}.agent-steps strong{font-size:15px;color:var(--ink)}
+.agent-steps p,.agent-tools p{font-size:12px;color:var(--muted);line-height:1.8;margin:10px 0 0}
+.agent-section code{font-family:Consolas,monospace;font-size:12px;overflow-wrap:anywhere}
+.agent-tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.agent-tools article{padding:18px;border-radius:14px;background:#f1f5fc}.agent-tools code{color:#305a96}
+.agent-instructions{border-top:1px solid var(--line);margin-top:28px;padding-top:20px}
+.agent-instructions summary{cursor:pointer;font-size:13px;line-height:1.7}
+.agent-instructions pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f1f5fc;color:#334b69;border-radius:14px;padding:20px;font-size:12px;line-height:1.9}
+.agent-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:20px}.agent-actions>a{font-size:12px;color:#3469b8}
+.agent-copy{font-size:12px;padding:13px 19px}.agent-actions [role=status]{font-size:11px;color:#3c5c83}
+.agent-note{font-size:11px;color:#596575;margin:22px 0 0;line-height:1.8}
+@media(max-width:720px){.agent-section{margin-top:60px;margin-bottom:40px;padding:32px 22px;border-radius:23px}.agent-steps,.agent-tools{grid-template-columns:1fr;gap:18px}.agent-steps{margin-top:24px}.agent-tools article{padding:16px}.agent-actions{gap:16px}.agent-instructions pre{padding:15px;font-size:11px}}
