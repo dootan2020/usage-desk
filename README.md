@@ -11,8 +11,8 @@ tool calls, quota/credit interpretation and a copyable instruction block.
 
 ## Download
 
-[Download v1.0.1-rc.17 for Windows x64](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.17/UsageDeskSetup-1.0.1-rc.17-x64.exe)
-· [SHA-256 checksums](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.17/SHA256SUMS.txt)
+[Download v1.0.1-rc.18 for Windows x64](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.18/UsageDeskSetup-1.0.1-rc.18-x64.exe)
+· [SHA-256 checksums](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.18/SHA256SUMS.txt)
 · [All releases](https://github.com/dootan2020/usage-desk/releases)
 
 **Release candidate — not a stable production release.** The installer is
@@ -29,7 +29,7 @@ when that runtime is missing. Python is included. No source checkout is needed.
 ## Install and sign in
 
 1. Download the installer and matching checksum from the release above. Verify
-   with `Get-FileHash -Algorithm SHA256 .\UsageDeskSetup-1.0.1-rc.17-x64.exe`.
+   with `Get-FileHash -Algorithm SHA256 .\UsageDeskSetup-1.0.1-rc.18-x64.exe`.
 2. Run setup and choose **Install / update**. It installs for your Windows user
    under `%LOCALAPPDATA%\FirstmateUsage`, adds Start menu/startup shortcuts and an
    Installed apps entry. A missing WebView2 runtime is obtained from Microsoft
@@ -105,7 +105,7 @@ instructions. The development repository and owner data remain private.
 ## Guides and landing page
 
 - [Install and connect](docs/getting-started.md)
-- [RC17 changes and validation](docs/release-rc17.md)
+- [RC18 changes and validation](docs/release-rc18.md)
 - [Clean Windows acceptance](docs/clean-windows.md)
 - [Owner Sandbox and signing steps](docs/owner-release-steps.md)
 - [Publisher signing](docs/signing.md)

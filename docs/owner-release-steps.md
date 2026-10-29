@@ -1,7 +1,7 @@
 # Owner steps before a stable release
 
-The accepted desktop snapshot is 1.0.1-rc.17. Installer SHA-256:
-`a761671f83ec4af4a424aba152df525430c65d8548d74fd39191ceabf21424dd`.
+The accepted desktop snapshot is 1.0.1-rc.18. Installer SHA-256:
+`36ad1bc72f77e1b57e09bf1e3c23a9418fb241e9a4887135b920f898802ed37a`.
 No Windows feature, certificate purchase or signing identity was changed.
 
 ## Enable Windows Sandbox
@@ -28,8 +28,8 @@ No Windows feature, certificate purchase or signing identity was changed.
 The generated test bundle can also be prepared from the downloaded release:
 
 ```powershell
-Expand-Archive .\UsageDeskCleanWindows-1.0.1-rc.17.zip .\UsageDeskCleanWindows
-powershell -NoProfile -File .\UsageDeskCleanWindows\prepare-sandbox-test.ps1 -Setup .\UsageDeskSetup-1.0.1-rc.17-x64.exe -ExpectedSha256 a761671f83ec4af4a424aba152df525430c65d8548d74fd39191ceabf21424dd
+Expand-Archive .\UsageDeskCleanWindows-1.0.1-rc.18.zip .\UsageDeskCleanWindows
+powershell -NoProfile -File .\UsageDeskCleanWindows\prepare-sandbox-test.ps1 -Setup .\UsageDeskSetup-1.0.1-rc.18-x64.exe -ExpectedSha256 36ad1bc72f77e1b57e09bf1e3c23a9418fb241e9a4887135b920f898802ed37a
 ```
 
 Follow [Microsoft's Sandbox installation guide](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-install).
