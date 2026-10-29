@@ -6,6 +6,9 @@ A local Windows taskbar widget for Codex, Claude and Google Antigravity usage,
 quota resets and reported credits. Click taskbar usage to open the detail panel.
 Agents can read the same local cache through MCP.
 
+Read the [MCP instructions for agents](docs/mcp-agents.md) for connection checks,
+tool calls, quota/credit interpretation and a copyable instruction block.
+
 ## Download
 
 [Download v1.0.1-rc.17 for Windows x64](https://github.com/dootan2020/usage-desk/releases/download/v1.0.1-rc.17/UsageDeskSetup-1.0.1-rc.17-x64.exe)

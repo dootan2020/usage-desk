@@ -20,3 +20,9 @@ for(const [index,motion] of [...document.querySelectorAll('.wave-particle animat
 }
 for(const icon of document.querySelectorAll('.ambient-icon'))icon.style.animationDuration=(7+Math.random()*3).toFixed(2)+'s';
 for(const wave of document.querySelectorAll('.wave-line'))wave.style.animationDuration=(16+Math.random()*12).toFixed(2)+'s';
+
+document.getElementById('copy-agent-prompt').addEventListener('click',async()=>{
+  const text=document.getElementById('agent-prompt').textContent;
+  try{await navigator.clipboard.writeText(text);document.getElementById('agent-copy-status').textContent='Agent instructions copied.';}
+  catch{document.getElementById('agent-copy-status').textContent='Open the instructions above and copy the text manually.';}
+});

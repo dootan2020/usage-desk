@@ -28,7 +28,7 @@
   <path d="M4 19h16" />
 </svg>
 </button>
-  <div id="nav-links" class="nav-links"><a href="#features">Features</a><a href="#how">How it works</a><a href="#download">Download</a><a href="#faq">FAQ</a></div>
+  <div id="nav-links" class="nav-links"><a href="#features">Features</a><a href="#how">How it works</a><a href="#agents">For agents</a><a href="#download">Download</a><a href="#faq">FAQ</a></div>
   <a class="github" href="https://github.com/dootan2020/usage-desk" target="_blank" rel="noopener noreferrer" aria-label="Usage desk on GitHub">GitHub <svg aria-hidden="true" focusable="false" data-lucide="external-link" class="ui-icon"
   xmlns="http://www.w3.org/2000/svg"
   width="24"
@@ -557,6 +557,32 @@
   <path d="m7 10 5 5 5-5" />
 </svg>
 </a></section>
+<section class="agent-section wrap" id="agents" aria-labelledby="agents-title">
+  <div class="section-top"><div><div class="eyebrow">ONE CACHE. EVERY AGENT.</div><h2 id="agents-title">Let your agents<br>check the allowance.</h2></div><p class="section-description">Codex, Claude Code and agy read the same private snapshot through local MCP.</p></div>
+  <ol class="agent-steps">
+    <li><strong>Connect locally</strong><p>Keep Usage desk running. Set up the connection, then reconnect MCP or open a new client session.</p></li>
+    <li><strong>Ask once</strong><p>Use <code>firstmate-usage</code> and call <code>usage_get_snapshot</code> with <code>{}</code> for all connected accounts.</p></li>
+    <li><strong>Read with context</strong><p>Report each quota, credit and reset separately, with its timezone, source age and stale status.</p></li>
+  </ol>
+  <div class="agent-tools">
+    <article><code>usage_get_snapshot</code><p>Quota, credit, reset times and freshness. Your starting point.</p></article>
+    <article><code>usage_get_timeline</code><p>Observed history and upcoming resets when you need more detail.</p></article>
+    <article><code>usage_get_billing</code><p>Reported credit details. Missing amounts and dates stay unknown.</p></article>
+  </div>
+  <details class="agent-instructions"><summary>Instructions to give your agent</summary><pre id="agent-prompt">For LLM usage questions, use the firstmate-usage MCP server. Call
+usage_get_snapshot with {} to read all connected accounts from the local cache.
+Report each provider/account and quota separately, including used/remaining,
+reset date/time in the user's timezone, credit balance/unit/expiry when reported,
+and observation age. Check stale and awaiting_refresh on each pool. Missing is
+unknown, not zero; a past reset is not a confirmed refill. Codex credits are not
+currency, and Claude cloud credit applies to cloud sessions. Use
+usage_get_timeline only for history and usage_get_billing for credit details.
+Never start a model, refresh providers, read credentials or change billing to
+answer usage questions. If MCP or the cache is unavailable, say so. Keep private
+account data out of public pages.</pre></details>
+  <div class="agent-actions"><button class="button agent-copy" id="copy-agent-prompt" type="button">Copy agent instructions</button><a href="agent-guide.md" download="usage-desk-agent-guide.md">Download full agent guide</a><span id="agent-copy-status" role="status" aria-live="polite"></span></div>
+  <p class="agent-note">Read-only cached telemetry. No model prompt, API key or website access to your local collector. Codex credits are not currency; Claude cloud credit is for cloud sessions. The current public download is RC17; bundled-path and current agy registration fixes start with the local RC18 candidate. See the full guide for older-build setup.</p>
+</section>
 </main>
 <footer class="footer wrap"><a class="brand" href="#top"><img src="assets/usage-desk.svg" width="28" height="28" alt="">Usage desk</a><div><a href="https://github.com/dootan2020/usage-desk">GitHub</a><a href="https://github.com/dootan2020/usage-desk/releases">Releases</a><a href="https://github.com/dootan2020/usage-desk/issues">Report an issue</a></div><p>Independent utility. Not affiliated with OpenAI, Anthropic or Google. Product names belong to their respective owners.</p><small>© 2026 Usage desk · A little clarity. For every model.</small></footer>
 </body></html>

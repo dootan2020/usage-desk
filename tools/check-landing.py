@@ -8,6 +8,7 @@ import shutil
 import tempfile
 import urllib.request
 from html.parser import HTMLParser
+from html import unescape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,6 +31,15 @@ def validate(root):
     html = (root / 'index.html').read_text(encoding='utf-8')
     page = Page(); page.feed(html)
     assert len(page.ids) == len(set(page.ids)), 'Duplicate HTML ID'
+    guide_path = root / 'agent-guide.md'
+    assert guide_path.is_file(), 'Missing agent guide download'
+    guide = guide_path.read_text(encoding='utf-8')
+    assert 'href="agent-guide.md"' in html and 'id="agents"' in html, 'Agent guide is not reachable'
+    prompt = re.search(r'<pre id="agent-prompt">([\s\S]*?)</pre>', html)
+    instructions = re.search(r'## Copy into[\s\S]*?```text\n([\s\S]*?)\n```', guide)
+    assert prompt and instructions and unescape(prompt[1]) == instructions[1], 'Copyable agent instructions differ from guide'
+    for tool in ('usage_get_snapshot', 'usage_get_timeline', 'usage_get_billing'):
+        assert tool in guide and tool in html, 'Missing documented MCP tool'
     assert set(page.fragments) <= set(page.ids), 'Broken navigation target'
     assert all((root / asset).is_file() for asset in page.assets), 'Missing local page asset'
     assert 'Released 25 Oct 2026' in html, 'Release date is not visible'
