@@ -19,8 +19,8 @@ claude mcp get firstmate-usage
 agy mcp list
 ```
 
-The public RC18 preview includes bundled-path and current agy registration
-fixes. It remains unsigned; clean Windows and real reboot acceptance are
+The public RC19 preview includes taskbar payload and corrupt-cache recovery
+fixes, along with the RC18 bundled-path and current agy registration fixes. It remains unsigned; clean Windows and real reboot acceptance are
 pending. Older RC17 builds do not include those fixes. For older builds, use the actual physical bundled
 interpreter/script paths, not assumed LocalAppData paths. Current agy stores MCP
 servers in `.gemini/config/mcp_config.json`. Its official registration command is:
